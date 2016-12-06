@@ -19,7 +19,7 @@ function TagAccessory(log, config) {
 }
 
 TagAccessory.prototype.getServices = function() {
-  this.service = new Service.StatelessProgrammableSwitch();
+  this.service = new Service.Switch();
 
   return [this.service];
 };
