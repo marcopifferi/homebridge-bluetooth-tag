@@ -36,6 +36,8 @@ TagAccessory.prototype.discoverTag = function() {
 };
 
 TagAccessory.prototype.onDiscoverPeripheral = function(peripheral) {
+  this.log('onDiscoverPeripheral');
+    
   var address = peripheral.address;
   if (address == 'unknown') {
     address = peripheral.id;
